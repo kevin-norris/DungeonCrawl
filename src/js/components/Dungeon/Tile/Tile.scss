@@ -1,0 +1,17 @@
+.tile{
+	width: 15px;
+	height: 15px;
+	background: #383838;
+	position: absolute;
+	&.floor{
+		background: grey;
+	}
+	&.hero{
+		background: lightblue;
+	}
+	&.hp{ background: green;}
+	&.weapon{ background: gold;}
+	&.portol{ background: purple;}
+	&.enemy {background: red;}
+	&.boss {background: #520000;}
+}

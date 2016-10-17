@@ -1,0 +1,63 @@
+.game{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&.dark{
+		background: black;
+	}
+}
+.mainTitle{
+	color: #520000;
+	font-family: 'Creepster', cursive;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	margin: 15px 0;
+	&.dark{
+		color: #cd0000;
+		text-shadow: 0px 0px 30px #cd0000;
+	}
+}
+
+.lightsButton{
+	margin-top: 10px;
+	font-weight: bold;
+	padding: 4px 6px;
+	border-style: none;
+	cursor: pointer;
+	outline: none;
+	background: black;
+	color: white;
+	box-shadow: 0px 0px 10px 2px black;
+	&.dark{
+		background: white;
+		color: black;
+		box-shadow: 0px 0px 10px 2px white;
+	}
+	&:hover{
+		box-shadow: none;
+	}
+}
+
+.helpTxt{
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	margin: 6px 0;
+	&.dark{
+		color: white;
+	}
+}
+
+@media (max-width: 500px) and (max-height: 900px){
+	.helpTxt{
+		font-size: 0.85rem;
+	}
+}
+
+@media (max-height: 550px){
+	.mainTitle{
+		font-size: 2rem;
+		margin: 10px 0;
+	}
+}
