@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import { gridCoordsToOffsetAndDimStyle} from "./../../utils/gridCoordsToStyle";
+import { move, moveEnemies } from "./../../state/actions/actions";
 import "./TouchSensors.scss";
 
 class TouchSensors extends React.Component{
@@ -18,10 +19,27 @@ class TouchSensors extends React.Component{
 	}
 	processTouch(target){
 		console.log("touched: ", target, " target ID: ", target.id);
+		switch (target.id){
+			case "topSensor":
+				this.props.dispatch(move([-1,0]));
+				break;
+			case "botSensor":
+				this.props.dispatch(move([1,0]));
+				break;
+			case "rightSensor":
+				this.props.dispatch(move([0,1]));
+				break;
+			case "leftSensor":
+				this.props.dispatch(move([0,-1]));
+				break;
+		}
+		this.props.dispatch(moveEnemies());
 	}
 	handleTouchStart(event){
-		for (let i = 0; i < event.targetTouches.length; i++){
-			this.processTouch(event.targetTouches[i].target);
+		if (this.props.gameOver === 0){	// Game is not over
+			for (let i = 0; i < event.targetTouches.length; i++){
+				this.processTouch(event.targetTouches[i].target);
+			}
 		}
 	}
 	render(){
@@ -42,12 +60,14 @@ class TouchSensors extends React.Component{
 
 TouchSensors.propTypes = {
 	camera: React.PropTypes.object,
+	gameOver: React.PropTypes.number,
 	dispatch: React.PropTypes.func
 };
 
 const mapStateToProps = (state) => {
 	return {
 		camera: state.viewReducer.camera,
+		gameOver: state.rogueReducer.gameOver
 	};
 };
 
