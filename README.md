@@ -1,6 +1,6 @@
 # **Dungeon Crawl**
 
-A dungeon crawl game with the goal of defeating the boss on the fourth level of the dungeon. Build as part of the [freeCodeCamp](www.freecodecamp.com) Data Visualization Certification.
+A dungeon crawl game with the goal of defeating the boss on the fourth level of the dungeon. Built as part of the [freeCodeCamp](www.freecodecamp.com) Data Visualization Certification.
 
 **[Play the game](https://kevin-norris.github.io/DungeonCrawl/)**  
 Playable on both PC and Mobile.
