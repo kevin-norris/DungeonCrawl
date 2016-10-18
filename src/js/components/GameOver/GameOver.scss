@@ -60,6 +60,8 @@
 		border-width: 3px;
 		padding: 3px 5px;
 	}
+	&:focus {outline: none;}
+	&::-moz-focus-inner {border: 0;}
 }
 
 .stats{
