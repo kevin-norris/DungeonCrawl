@@ -15,7 +15,7 @@ class GameOver extends React.Component{
 	render(){
 		const title = this.props.gameOver === -1 ? "You Died" : "You Won!";
 		let alterClass = " won";
-		if(this.props.gameOver === -1)
+		if (this.props.gameOver === -1)
 			alterClass = " dead";
 		let stats = [];
 		if (this.props.gameOver === 1){
@@ -44,7 +44,6 @@ class GameOver extends React.Component{
 			} else if (this.props.heroStats.hpIncrease < 1500){
 				stats.push(<h4 key="healthTitle">"Wirey"</h4>);
 			}
-			stats.push(<h4 key="health"></h4>);
 		}
 		return (
 				<div className={"gameOver" + (this.props.gameOver !== 0 ? " show" : "") + alterClass}>
