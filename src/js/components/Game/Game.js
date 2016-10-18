@@ -23,7 +23,7 @@ class Game extends React.Component{
 				<p className={"helpTxt" + darkClass}>Kill The Boss In Dungeon 4</p>
 				<HUD />
 				<Camera />
-				<p className={"helpTxt" + darkClass}>Use the arrow keys to move, on mobile touch the sides of the screen.</p>
+				<p className={"helpTxt" + darkClass}>Use the arrow keys to move, on mobile tap the sides of the game screen.</p>
 				<button className={"lightsButton" + darkClass} onClick={this.toggleDarkness}>{this.props.dark ? "Turn On The Lights" : "Turn Off The Lights"}</button>
 				<GameOver />
 			</div>

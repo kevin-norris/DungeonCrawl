@@ -12,7 +12,6 @@ export default class Room {
 		// Set x and y so room is roughly in middle of map
 		this.xPos = Math.floor(columns / 2 - this.roomWidth / 2);
 		this.yPos = Math.floor(rows / 2 + this.roomHeight / 2);
-		console.log("First room: xPos: " + this.xPos + " yPos: " + this.yPos);
 		} else {
 			this.enteringCorridorDirection = corridor.direction;
 

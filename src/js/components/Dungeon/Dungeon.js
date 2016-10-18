@@ -9,7 +9,6 @@ import "./Dungeon.scss";
 class Dungeon extends React.Component{
 
 	render(){
-		console.log("rendering dungeon");
 		return (
 				<div className="dungeonWrapper">
 					{/*Render dungeon*/}

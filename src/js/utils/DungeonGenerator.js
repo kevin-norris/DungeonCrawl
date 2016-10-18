@@ -21,8 +21,6 @@ import { DUNGEON_TILES } from "./DungeonGenerator/DungeonConstants";
 		-enemyStartPos: array, each element contains a position array for the enemy with the same index
 */
 export default function generateDungeon(rows, columns, numRooms, roomWidth, roomHeight, corridorLength, level){
-	console.log("DungeonGenerator run with level: ", level);
-
 	//Pushes rooms and corridors from the startingCorridor until the next room or corridor would be out of bounds
 	const createRoomsAndCorridors = (nextRoomIndex, roomNum, startingCorridor) => {
 		let a = nextRoomIndex, end = nextRoomIndex + roomNum;
