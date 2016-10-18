@@ -29,7 +29,7 @@ class GameOver extends React.Component{
 			stats.push(<h3 key="killsHeading">Enemies slayen: {this.props.heroStats.killCount}</h3>);
 			if (this.props.heroStats.killCount > 24){
 				stats.push(<h4 key="killsTitle">"Slayer"</h4>);
-			} else if (this.props.heroStats.killCount <= 16){
+			} else if (this.props.heroStats.killCount <= 17){
 				stats.push(<h4 key="killsTitle">"Pacifist"</h4>);
 			}
 			stats.push(<h3 key="damageHeading">Damage taken: {this.props.heroStats.damageTaken}</h3>);
