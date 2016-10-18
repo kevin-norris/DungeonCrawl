@@ -29,8 +29,16 @@
     }
 }
 
-@media (max-height: 550px){
+@media (max-height: 750px){
+    .HUD{
+        margin-bottom: 5px;
+        li{
+            font-size: 0.8rem;
+        }
+    }
+}
+@media (max-width: 631px){
     .HUD li{
-        font-size: 0.9rem;
+        padding: 3px 8px;
     }
 }

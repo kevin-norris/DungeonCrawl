@@ -42,6 +42,7 @@
 
 .helpTxt{
 	font-family: 'Oswald', sans-serif;
+	text-align: center;
 	color: black;
 	margin: 6px 0;
 	&.dark{
@@ -55,9 +56,18 @@
 	}
 }
 
-@media (max-height: 550px){
+@media (max-height: 750px){
 	.mainTitle{
 		font-size: 2rem;
 		margin: 10px 0;
 	}
+	.helpTxt{
+		font-size: 0.8rem;
+		margin: 3px 0;
+	}
+}
+@media (max-height: 570px){
+    .mainTitle{
+    	margin: 5px 0;
+    }
 }
