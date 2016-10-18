@@ -32,14 +32,14 @@
 		background: #ded290;
 		color: #a48a00;
 	}
-	h3, h5{
-		color: black;
-	}
 	h1{
 		margin: 15px;
 		text-decoration: underline;
 	}
-	h3{margin: 8px;}
+	h3{
+		margin: 8px;
+		color: black;
+	}
 	h4{
 		margin: 4px;
 		color: blue;
@@ -66,4 +66,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+@media (max-width: 441px){
+	.gameOver{
+		h1 {font-size: 1.5em;}
+		h3 {font-size: 0.9em;}
+		h4 {font-size: 0.8em;}
+
+	}
 }
