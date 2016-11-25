@@ -2,7 +2,7 @@
 
 A dungeon crawl game with the goal of defeating the boss on the fourth level of the dungeon. Built as part of the [freeCodeCamp](www.freecodecamp.com) Data Visualization Certification.
 
-**[Play the game](https://kevin-norris.github.io/DungeonCrawl/)**  
+**[Play the game](https://kevinnorris.github.io/DungeonCrawl/)**  
 Playable on both PC and Mobile.
 
 Created using [React](https://facebook.github.io/react/), [Redux](http://redux.js.org/), ES6. [Sass](http://sass-lang.com/) for style sheets. [Babel](https://babeljs.io/) and [webpack](https://webpack.github.io/) for transpiling and bundling.
